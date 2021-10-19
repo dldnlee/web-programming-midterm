@@ -1,0 +1,257 @@
+
+/* 이은원 (2020106014) */
+
+body{
+    color: #777777;
+    background-color: #ffffff;
+    background-image: url(images/dark-wood.jpg);
+    background-position: center;
+    font-family: Georgia, Times, serif;
+    margin: 0px;
+}
+
+.container {
+    width: 600px;
+    margin: 20px auto 20px auto;
+    background-color: #ffffff;
+}
+
+header {
+    height: 160px;
+    background-image: url("images/header.jpg");
+}
+
+.grid-container {
+	display: grid;
+	padding: 20px;
+	box-sizing: border-box;
+	grid-template-rows: auto;
+}
+
+
+#bokchoi, #teriyaki, #schedule {
+	height: auto;
+	/* border: solid 1px black; */
+	margin-bottom: 80px;
+}
+
+#bokchoi, #teriyaki {
+	padding-right: 20px;
+}
+
+#location, #schedule {
+	display: grid;
+	/* border: solid 1px black; */
+	padding: 0px;
+	grid-template-columns: 1fr;
+}
+
+#left-location, #left-schedule {
+	padding-right: 20px;
+	/* margin-bottom: 80px; */
+}
+
+#right-location, #right-schedule {
+	width: 430px;
+	/* margin-bottom: 80px; */
+}
+
+figure {
+    float: top;
+    width: 290px;
+    height: auto;
+    padding: 5px 5px 1px 5px;
+    border: 1px solid #e6e6e6;
+	margin: 0px 80px 0px 0px;
+}
+figcaption {
+	margin-top: 1px
+}
+
+h1 {
+    text-indent: -99999px;
+    width: 940px;
+    height: 130px;
+    margin: 0px;
+}
+h2 {
+	font-size: 26px;
+}
+h3 {
+	color:rgb(219, 82, 112);
+	font-size: 22px;
+}
+p {
+	font-size: 20px;
+	text-align: left;
+}
+
+
+nav, footer {
+    clear: both;
+    color: #ffffff;
+    background-color: #aca9a4;
+    height: 30px;
+}
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+}
+nav li {
+    display: inline;
+    margin-right: 40px;
+}
+nav li a {
+    color: #ffffff;
+	text-decoration: none;
+}  
+nav li a:hover, nav li a.current {
+    color: #000000;
+}
+
+caption {
+	font-size: 10;
+}
+.tg  {
+	border-collapse: separate;
+	border-spacing:7px 7px;
+	border: 1px dashed rgba(0, 0, 0, 0.288);
+}
+.tg td{
+	border-color:#9a0000;
+	border-style:solid;
+	border-width:1px;
+	font-size:16px;
+	overflow:hidden;
+	padding:0px 1px;
+	word-break:normal;
+}
+.tg th{
+	border-color:#9a0000;
+	border-style:solid;
+	border-width:1px;
+	font-size:16px;
+    font-weight:normal;
+    overflow:hidden;
+	padding:4px 1px;
+	word-break:normal;
+}
+.tg .tg-vtz4{
+	text-align:center;
+	vertical-align:center;
+}
+.tg .tg-nljl{
+	font-weight:bold;
+	text-align:center;
+	vertical-align:center
+}
+.tg .tg-2t5p{
+	font-weight:bold;
+	text-align:center;
+	vertical-align:center;
+}
+
+aside {
+	display: none;
+}
+aside h2 {
+	margin: 0px auto 35px auto;
+}
+aside h3 {
+	margin-top: 25px;
+}
+aside h3 a{
+	text-decoration: none;
+	color:rgb(219, 82, 112);
+}
+aside h3 a:hover, aside h3 a.current {
+	color:rgb(231, 194, 69);
+}
+
+footer {
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#left-location p a {
+	text-decoration: none;
+	color:rgb(219, 82, 112);
+}
+#left-location p a:hover, aside h3 a.current {
+	color:rgb(231, 194, 69);
+}
+ 
+
+
+@media screen and (min-width: 1250px) {
+	aside {
+		display: block;
+		background: url(images/scallop.png) repeat-y left top; 
+		background-color: #F6F3ED;
+		padding: 2em 3em 3em 3em;
+		padding-bottom: .9em;
+		position: fixed;
+		height: 250px;
+		width: auto;
+		top: 0px;
+		right: 0px;
+	}
+
+}
+
+@media screen and (min-width: 850px) {
+	
+.container {
+    width: 850px;
+    margin: 20px auto 20px auto;
+    background-color: #ffffff;
+}
+
+header {
+    height: 160px;
+    background-image: url("images/header.jpg");
+}
+
+.grid-container {
+	display: grid;
+	padding: 20px;
+	box-sizing: border-box;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+
+#bokchoi, #teriyaki, #schedule, #location {
+	height: 280px;
+	/* border: solid 1px black; */
+	margin-bottom: 0px;
+}
+
+#bokchoi, #teriyaki {
+	padding-right: 20px;
+}
+
+#location, #schedule {
+	display: grid;
+	/* border: solid 1px black; */
+	padding: 0px;
+	margin-bottom: 0px;
+	grid-template-columns: 1fr 1fr;
+}
+
+#left-location, #left-schedule {
+	padding-right: 20px;
+}
+
+#right-location, #right-schedule {
+	width: 430px;
+}
+
+figure {
+    float: left;
+    width: 290px;
+    height: auto;
+    padding: 5px 5px 1px 5px;
+    border: 1px solid #e6e6e6;
+	margin: 0px 80px 0px 0px;
+}
+}
